@@ -1,2 +1,3 @@
 # time-keeper
-A simple online time-keeper [coming soon]
+
+A simple online time-keeper [in progress]
