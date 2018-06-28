@@ -1,11 +1,20 @@
 <template>
 <div class="container">
-    Container
+    <tab-controls></tab-controls>
+    <tabs-container></tabs-container>
 </div>
 </template>
 
 <script>
+import TabControls from './TabControls.vue';
+import TabsContainer from './TabsContainer.vue';
 
+export default {
+    components: {
+        TabControls,
+        TabsContainer
+    }
+};
 </script>
 
 <style lang="less" scoped>

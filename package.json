@@ -26,11 +26,13 @@
   "dependencies": {
     "ample-alerts": "0.11.1",
     "font-awesome": "4.7.0",
-    "vue": "2.5.16"
+    "vue": "2.5.16",
+    "vuex": "3.0.1"
   },
   "devDependencies": {
     "babel-core": "6.26.3",
     "babel-loader": "7.1.4",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "1.6.1",
     "clean-webpack-plugin": "0.1.19",
     "copy-webpack-plugin": "4.5.1",
