@@ -1,9 +1,13 @@
 <template>
 <div class="tab-controls">
-    <div class="tab-control" v-bind:class="{ active: activeScreen === 'countdown-timer' }" @click="setActiveScreen('countdown-timer')">
+    <div class="tab-control"
+        v-bind:class="{ active: activeScreen === 'countdown-timer' }"
+        @click="setActiveScreen('countdown-timer')">
         <div class="tab-control-face fa fa-clock-o fa-4x"></div>
     </div>
-    <div class="tab-control" v-bind:class="{ active: activeScreen === 'counter' }" @click="setActiveScreen('counter')">
+    <div class="tab-control"
+        v-bind:class="{ active: activeScreen === 'counter' }"
+        @click="setActiveScreen('counter')">
         <div class="tab-control-face fa fa-th fa-4x"></div>
     </div>
 </div>
@@ -52,6 +56,7 @@ export default {
         color: #000;
         background-color: #044;
         cursor: pointer;
+        box-shadow: 0 0 40px #000 inset;
 
         &.active {
             color: cyan;

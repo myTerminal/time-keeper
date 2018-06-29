@@ -4,5 +4,6 @@
 // };
 
 export default {
-    activeScreen: state => state.activeScreen
+    activeScreen: state => state.activeScreen,
+    counterCount: state => state.counter.count
 };
