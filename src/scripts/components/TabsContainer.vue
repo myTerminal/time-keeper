@@ -20,4 +20,21 @@ export default {
 <style lang="less" scoped>
 @import '../../styles/mixins.less';
 
+.tabs-container {
+    .box-sizing(border-box);
+    float: left;
+    width: 70%;
+    height: 100%;
+
+    @media (orientation: portrait) {
+        width: 100%;
+        height: 80%;
+    }
+
+    .tab {
+        height: 100%;
+        padding: 10px;
+    }
+}
+
 </style>
