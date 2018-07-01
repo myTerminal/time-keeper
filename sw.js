@@ -1,6 +1,6 @@
 /* global caches fetch skipWaiting */
 
-var cacheName = '1530292450309',
+var cacheName = '1530422300438',
     origin = '/time-keeper/';
 
 this.addEventListener('install', function (event) {
