@@ -8,9 +8,10 @@ import actions from './actions';
 Vue.use(Vuex);
 
 const state = {
-    activeScreen: 'counter',
+    activeScreen: 'countdown-timer',
     countdownTimer: {
-        nothing: null
+        timeout: 0,
+        isRunning: false
     },
     counter: {
         count: 0

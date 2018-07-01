@@ -63,18 +63,18 @@ export default {
             text-align: center;
             color: cyan;
             font-size: 10em;
-            text-shadow: 0 0 5px #044;
+            text-shadow: 0 0 4px #000;
         }
     }
 
     .counter-controls {
         .box-sizing(border-box);
         height: 30%;
-        padding: 10px;
+        padding: 30px;
 
         .counter-control-container {
             .box-sizing(border-box);
-            padding: 10px;
+            padding: 10px 20px;
             float: left;
             width: 50%;
             height: 100%;
@@ -86,6 +86,7 @@ export default {
                 cursor: pointer;
                 border: 2px solid cyan;
                 .round-borders(20px);
+                box-shadow: 0 0 20px #000;
 
                 &.active,
                 &:hover {

@@ -108,3 +108,8 @@
     -moz-transform: translate3d(@tx, @ty, @tz) scale3d(@scale, @scale, 1);
     transform: translate3d(@tx, @ty, @tz) scale3d(@scale, @scale, 1);
 }
+
+.animation(@props) {
+    -webkit-animation: @props;
+    animation: @props;
+}

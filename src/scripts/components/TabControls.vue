@@ -41,6 +41,7 @@ export default {
     float: left;
     width: 30%;
     height: 100%;
+    box-shadow: 0 0 40px #000;
 
     @media (orientation: portrait) {
         width: 100%;
@@ -53,19 +54,19 @@ export default {
         padding: 10px;
         width: 100%;
         height: 50%;
-        color: #000;
+        color: #0cc;
         background-color: #044;
         cursor: pointer;
-        box-shadow: 0 0 40px #000 inset;
+
+        &:hover {
+            color: cyan;
+            box-shadow: 0 0 40px #066 inset;
+        }
 
         &.active {
             color: cyan;
             background-color: #066;
             box-shadow: 0 0 40px cyan inset;
-        }
-
-        &:hover {
-            color: cyan;
         }
 
         @media (orientation: portrait) {

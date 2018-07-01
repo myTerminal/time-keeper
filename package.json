@@ -24,7 +24,7 @@
   "author": "Mohammed Ismail Ansari <team.terminal@gmail.com>",
   "license": "GPL-3.0",
   "dependencies": {
-    "ample-alerts": "0.11.1",
+    "ample-alerts": "0.11.2",
     "font-awesome": "4.7.0",
     "vue": "2.5.16",
     "vuex": "3.0.1"
