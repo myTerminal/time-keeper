@@ -1,5 +1,7 @@
 <template>
-<div class="tab countdown-timer" v-show="activeScreen === 'countdown-timer'">
+<div class="tab countdown-timer"
+    v-show="activeScreen === 'countdown-timer'"
+    v-bind:class="{ illuminate: hasTimerTimedOut }">
     <div class="time-holder">
         <div class="time-value"
             v-bind:class="{ blink: !isCountdownTimerRunning }">
@@ -52,7 +54,8 @@ export default {
             'timeoutHours',
             'timeoutMinutes',
             'timeoutSeconds',
-            'displayableTimeout'
+            'displayableTimeout',
+            'hasTimerTimedOut'
         ])
     },
     methods: {

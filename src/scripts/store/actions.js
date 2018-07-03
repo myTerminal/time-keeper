@@ -12,6 +12,7 @@ export default {
             minutes = context.getters.timeoutMinutes,
             seconds = context.getters.timeoutSeconds;
 
+        context.commit('dismissCountdownTimerAlarm');
         context.dispatch('pauseTimer');
 
         prompt('Set hours:', {
@@ -51,6 +52,7 @@ export default {
             context.commit('tickCountdownTimer');
 
             if (!context.state.countdownTimer.timeout) {
+                context.commit('setCountdownTimerAlarm');
                 context.dispatch('pauseTimer');
             }
         }, 1000);
@@ -61,6 +63,8 @@ export default {
         clearInterval(timer);
     },
     toggleTimer: context => {
+        context.commit('dismissCountdownTimerAlarm');
+
         if (context.state.countdownTimer.isRunning) {
             context.dispatch('pauseTimer');
         } else {

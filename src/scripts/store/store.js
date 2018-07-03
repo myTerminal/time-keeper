@@ -11,7 +11,8 @@ const state = {
     activeScreen: 'countdown-timer',
     countdownTimer: {
         timeout: 0,
-        isRunning: false
+        isRunning: false,
+        hasTimedOut: false
     },
     counter: {
         count: 0
