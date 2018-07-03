@@ -103,6 +103,10 @@ export default {
                 }
             }
         }
+
+        @media (max-height: 600px) {
+            padding: 5px;
+        }
     }
 }
 

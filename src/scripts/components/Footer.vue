@@ -13,6 +13,7 @@
 
 .footer {
     position: absolute;
+    display: none;
     bottom: 0;
     left: 0;
     width: 100%;

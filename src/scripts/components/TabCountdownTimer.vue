@@ -115,11 +115,19 @@ export default {
             .transform(translateY(-50%));
             text-align: center;
             color: cyan;
-            font-size: 8em;
+            font-size: 10em;
             text-shadow: 0 0 4px #000;
 
             &.blink {
                 .animation(blink 0.5s ease-in-out 0s infinite alternate);
+            }
+
+            @media (max-width: 1000px) {
+                font-size: 7em;
+            }
+
+            @media (max-width: 720px) {
+                font-size: 5em;
             }
         }
     }
@@ -159,6 +167,10 @@ export default {
                     text-align: center;
                 }
             }
+        }
+
+        @media (max-height: 600px) {
+            padding: 5px;
         }
     }
 }
