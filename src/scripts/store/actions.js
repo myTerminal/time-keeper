@@ -8,13 +8,14 @@ const determineTimeout = function (hours, minutes, seconds) {
 
 export default {
     promptUserToSetCountdown: context => {
-        let hours = 0,
-            minutes = 0,
-            seconds = 0;
+        let hours = context.getters.timeoutHours,
+            minutes = context.getters.timeoutMinutes,
+            seconds = context.getters.timeoutSeconds;
 
         context.dispatch('pauseTimer');
 
         prompt('Set hours:', {
+            defaultResponse: hours,
             onAction: r1 => {
                 hours = +(r1 || 0);
 
@@ -22,6 +23,7 @@ export default {
                     determineTimeout(hours, minutes, seconds));
 
                 prompt('Set minutes:', {
+                    defaultResponse: context.getters.timeoutMinutes,
                     onAction: r2 => {
                         minutes = +(r2 || 0);
 
@@ -29,6 +31,7 @@ export default {
                             determineTimeout(hours, minutes, seconds));
 
                         prompt('Set seconds:', {
+                            defaultResponse: context.getters.timeoutSeconds,
                             onAction: r3 => {
                                 seconds = +(r3 || 0);
 
