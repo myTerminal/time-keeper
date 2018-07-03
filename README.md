@@ -8,7 +8,7 @@
 [![peer Dependency Status](https://david-dm.org/myTerminal/time-keeper/peer-status.svg)](https://david-dm.org/myTerminal/time-keeper#info=peerDependencies)  
 [![License](https://img.shields.io/badge/LICENSE-GPL%20v3.0-blue.svg)](https://www.gnu.org/licenses/gpl.html)
 
-A simple online time-keeper [in progress]
+A simple online time-keeper
 
 You can try it online: [https://myTerminal.github.io/time-keeper](https://myTerminal.github.io/time-keeper)
 
@@ -20,4 +20,7 @@ You can try it online: [https://myTerminal.github.io/time-keeper](https://myTerm
 ## To-do
 
 * Update icons and favicon
-* Verify offline support
+* Implement full-screen mode
+* Adjust UI for various screen sizes
+* Store count and timer value to cache
+* Implement color themes
