@@ -19,7 +19,6 @@ You can try it online: [https://myTerminal.github.io/time-keeper](https://myTerm
 
 ## To-do
 
-* Update icons and favicon
 * Implement full-screen mode
 * Store count and timer value to cache
 * Implement color themes
