@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import PageHeader from './Header.vue';
-import PageFooter from './Footer.vue';
-import PageContainer from './Container.vue';
+import PageHeader from '../Header/Header.vue';
+import PageFooter from '../Footer/Footer.vue';
+import PageContainer from '../Container/Container.vue';
 
 export default {
     components: {

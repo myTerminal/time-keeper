@@ -6,7 +6,7 @@
 </template>
 
 <script>
-const packageDetails = require('../../../package.json');
+const packageDetails = require('../../../../package.json');
 
 export default {
     data: function () {

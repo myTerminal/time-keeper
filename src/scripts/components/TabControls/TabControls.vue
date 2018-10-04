@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import '../../styles/mixins.less';
+@import '../../../styles/mixins.less';
 
 .tab-controls {
     .box-sizing(border-box);

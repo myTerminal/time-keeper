@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import TabCountdownTimer from './TabCountdownTimer.vue';
-import TabCounter from './TabCounter.vue';
+import TabCountdownTimer from '../TabCountdownTimer/TabCountdownTimer.vue';
+import TabCounter from '../TabCounter/TabCounter.vue';
 
 export default {
     components: {
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import '../../styles/mixins.less';
+@import '../../../styles/mixins.less';
 
 .tabs-container {
     .box-sizing(border-box);

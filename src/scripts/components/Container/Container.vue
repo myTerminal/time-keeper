@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import TabControls from './TabControls.vue';
-import TabsContainer from './TabsContainer.vue';
+import TabControls from '../TabControls/TabControls.vue';
+import TabsContainer from '../TabsContainer/TabsContainer.vue';
 
 export default {
     components: {
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import '../../styles/mixins.less';
+@import '../../../styles/mixins.less';
 
 .container {
     .box-sizing(border-box);

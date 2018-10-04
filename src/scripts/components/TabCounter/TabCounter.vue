@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import '../../styles/mixins.less';
+@import '../../../styles/mixins.less';
 
 .counter {
 
