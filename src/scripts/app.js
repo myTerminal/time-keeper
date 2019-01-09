@@ -1,3 +1,5 @@
+/* global module */
+
 import Vue from 'vue';
 
 import './service-worker-starter.js';
@@ -12,3 +14,7 @@ export default new Vue({
     store,
     render: c => c(App)
 });
+
+if (module.hot) {
+    module.hot.accept();
+}
