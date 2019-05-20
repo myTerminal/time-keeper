@@ -2,7 +2,7 @@
 
 import Vue from 'vue';
 
-import './service-worker-starter.js';
+import './pwa';
 
 import App from './components/App/App.vue';
 import store from './store/store';
