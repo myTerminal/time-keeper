@@ -1,7 +1,15 @@
 <template>
 <div class="header">
-    <b>{{packageDetails.name}}</b> - {{packageDetails.description}} (v{{packageDetails.version}})
-    <a class="source fa fa-github fa-lg" href="https://github.com/myTerminal/time-keeper" target="_blank">&nbsp;</a>
+  <i id="pwa-install"
+     class="fa fa-plus-square-o fa-lg"
+     title="Install as an app"
+     aria-hidden="true"
+     style="display: none;"
+     />
+  <span id="app-name">{{packageDetails.name}}</span>
+  <span id="app-description"> - {{packageDetails.description}}</span>
+  <span id="app-version">(v{{packageDetails.version}})</span>
+  <a id="app-source" class="fa fa-github fa-lg" href="https://github.com/myTerminal/time-keeper" target="_blank">&nbsp;</a>
 </div>
 </template>
 
@@ -29,7 +37,22 @@ export default {
     background-color: #000;
     color: #eee;
 
-    .source {
+    #pwa-install {
+        cursor: pointer;
+    }
+
+    #app-name {
+        font-weight: bold;
+    }
+
+    #app-description {
+
+        @media (orientation: portrait) {
+            display: none;
+        }
+    }
+
+    #app-source {
         margin-left: 5px;
         color: #fff;
         text-decoration: none;
