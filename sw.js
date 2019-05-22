@@ -1,6 +1,6 @@
 /* global caches fetch skipWaiting */
 
-const cacheName = '1558387380929',
+const cacheName = '1558486623895',
     origin = '/time-keeper/';
 
 this.addEventListener(
