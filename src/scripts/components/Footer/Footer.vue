@@ -9,7 +9,7 @@
 </script>
 
 <style lang="less" scoped>
-@import '../../../styles/mixins.less';
+@import '../../../../node_modules/effortless-css/less/all.less';
 
 .footer {
     position: absolute;

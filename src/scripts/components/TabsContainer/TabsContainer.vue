@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import '../../../styles/mixins.less';
+@import '../../../../node_modules/effortless-css/less/all.less';
 
 .tabs-container {
     .box-sizing(border-box);
