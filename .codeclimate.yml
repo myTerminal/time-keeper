@@ -1,4 +1,5 @@
-exclude_paths:
+version: "2"
+exclude_patterns:
 - "karma.conf.js"
 - "tests.bundle.js"
 - "webpack.*"
